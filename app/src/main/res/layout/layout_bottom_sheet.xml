@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+      android:layout_height="match_parent"
+      android:layout_width="match_parent">
+
+        <LinearLayout
+          android:background="@android:color/transparent"
+          android:layout_height="match_parent"
+          android:layout_width="match_parent"
+          android:orientation="vertical">
+
+
+            <com.google.android.material.appbar.AppBarLayout
+              android:id="@+id/appBarLayout"
+              android:background="@color/colorAccent"
+              android:layout_height="?attr/actionBarSize"
+              android:layout_width="match_parent">
+
+                <LinearLayout
+                  android:layout_height="match_parent"
+                  android:layout_width="match_parent"
+                  android:orientation="horizontal">
+
+
+                    <ImageButton
+                      android:id="@+id/cancelBtn"
+                      android:background="?attr/selectableItemBackgroundBorderless"
+                      android:layout_height="?attr/actionBarSize"
+                      android:layout_width="?attr/actionBarSize"
+                      android:src="@drawable/ic_cancel"
+                      android:tint="@android:color/white"
+                      tools:ignore="ContentDescription" />
+
+                    <TextView
+                      android:id="@+id/nameToolbar"
+                      android:layout_gravity="center_vertical"
+                      android:layout_height="wrap_content"
+                      android:layout_marginStart="15dp"
+                      android:layout_weight="1"
+                      android:layout_width="0dp"
+                      android:text="Name"
+                      android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                      android:textColor="@android:color/white" />
+
+                    <ImageButton
+                      android:id="@+id/editBtn"
+                      android:background="?attr/selectableItemBackgroundBorderless"
+                      android:layout_height="?attr/actionBarSize"
+                      android:layout_width="?attr/actionBarSize"
+                      android:src="@drawable/ic_create"
+                      android:tint="@android:color/white"
+                      tools:ignore="ContentDescription" />
+
+                    <ImageButton
+                      android:id="@+id/moreBtn"
+                      android:background="?attr/selectableItemBackgroundBorderless"
+                      android:layout_height="?attr/actionBarSize"
+                      android:layout_width="?attr/actionBarSize"
+                      android:src="@drawable/ic_more_vert"
+                      android:tint="@android:color/white"
+                      tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <androidx.core.widget.NestedScrollView
+              android:id="@+id/bottomSheet"
+              android:fillViewport="true"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent">
+
+                <LinearLayout
+                  android:layout_height="wrap_content"
+                  android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:padding="15dp">
+
+
+                    <LinearLayout
+                      android:id="@+id/profileLayout"
+                      android:gravity="center_vertical"
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal">
+
+
+                        <ImageView
+                          android:id="@+id/userImage"
+                          android:layout_height="?attr/actionBarSize"
+                          android:layout_width="?attr/actionBarSize"
+                          android:src="@drawable/ic_account"
+                          tools:ignore="ContentDescription" />
+
+
+                        <TextView
+                          android:id="@+id/userName"
+                          android:layout_height="wrap_content"
+                          android:layout_marginStart="15dp"
+                          android:layout_weight="1"
+                          android:layout_width="0dp"
+                          android:text="user name"
+                          android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginTop="10dp"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal">
+
+
+                        <ImageButton
+                          android:background="?attr/selectableItemBackgroundBorderless"
+                          android:layout_height="?attr/actionBarSize"
+                          android:layout_width="?attr/actionBarSize"
+                          android:src="@drawable/ic_phone"
+                          tools:ignore="ContentDescription" />
+
+
+                        <LinearLayout
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginStart="10dp"
+                          android:layout_width="match_parent"
+                          android:orientation="vertical">
+
+
+                            <LinearLayout
+                              android:layout_height="wrap_content"
+                              android:layout_width="match_parent"
+                              android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:layout_width="0dp"
+                                  android:orientation="vertical">
+
+
+                                    <TextView
+                                      android:id="@+id/number1"
+                                      android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:text="(000) 000-000"
+                                      android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                                    <TextView
+                                      android:id="@+id/typeOfNumber1"
+                                      android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:text="Mobile"
+                                      android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                </LinearLayout>
+
+                                <ImageButton
+                                  android:background="?attr/selectableItemBackgroundBorderless"
+                                  android:layout_height="?attr/actionBarSize"
+                                  android:layout_width="?attr/actionBarSize"
+                                  android:src="@drawable/ic_message"
+                                  android:tint="@color/colorPrimary"
+                                  tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                              android:layout_height="wrap_content"
+                              android:layout_width="match_parent"
+                              android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                  android:layout_height="wrap_content"
+                                  android:layout_weight="1"
+                                  android:layout_width="0dp"
+                                  android:orientation="vertical">
+
+
+                                    <TextView
+                                      android:id="@+id/number2"
+                                      android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:text="(000) 000-000"
+                                      android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                                    <TextView
+                                      android:id="@+id/typeOfNumber2"
+                                      android:layout_height="wrap_content"
+                                      android:layout_width="wrap_content"
+                                      android:text="Work"
+                                      android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                                </LinearLayout>
+
+                                <ImageButton
+                                  android:background="?attr/selectableItemBackgroundBorderless"
+                                  android:layout_height="?attr/actionBarSize"
+                                  android:layout_width="?attr/actionBarSize"
+                                  android:src="@drawable/ic_message"
+                                  android:tint="@color/colorPrimary"
+                                  tools:ignore="ContentDescription" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="15dp"
+                      android:layout_marginTop="15dp"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal">
+
+
+                        <View
+                          android:layout_height="0dp"
+                          android:layout_width="?attr/actionBarSize" />
+
+                        <View
+                          android:layout_height="0dp"
+                          android:layout_width="10dp" />
+
+                        <View
+                          android:background="#e6e6e6"
+                          android:layout_height="1dp"
+                          android:layout_width="match_parent" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal">
+
+                        <ImageButton
+                          android:background="?attr/selectableItemBackgroundBorderless"
+                          android:layout_height="?attr/actionBarSize"
+                          android:layout_width="?attr/actionBarSize"
+                          android:src="@drawable/ic_email"
+                          android:tint="@color/colorAccent"
+                          tools:ignore="ContentDescription" />
+
+
+                        <LinearLayout
+                          android:layout_height="wrap_content"
+                          android:layout_marginLeft="10dp"
+                          android:layout_marginStart="10dp"
+                          android:layout_width="match_parent"
+                          android:orientation="vertical">
+
+                            <LinearLayout
+                              android:layout_height="?attr/actionBarSize"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical">
+
+
+                                <TextView
+                                  android:id="@+id/email1"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="match_parent"
+                                  android:text="email@email.com"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                                <TextView
+                                  android:id="@+id/emailType1"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="match_parent"
+                                  android:text="Personal"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                              android:layout_height="?attr/actionBarSize"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical">
+
+
+                                <TextView
+                                  android:id="@+id/email2"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="match_parent"
+                                  android:text="email@email.com"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                                <TextView
+                                  android:id="@+id/emailType2"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="match_parent"
+                                  android:text="Work"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="15dp"
+                      android:layout_marginTop="15dp"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal">
+
+
+                        <View
+                          android:layout_height="0dp"
+                          android:layout_width="?attr/actionBarSize" />
+
+                        <View
+                          android:layout_height="0dp"
+                          android:layout_width="10dp" />
+
+                        <View
+                          android:background="#e6e6e6"
+                          android:layout_height="1dp"
+                          android:layout_width="match_parent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent"
+                      android:orientation="horizontal">
+
+                        <ImageButton
+                          android:background="?attr/selectableItemBackgroundBorderless"
+                          android:layout_height="?attr/actionBarSize"
+                          android:layout_width="?attr/actionBarSize"
+                          android:src="@drawable/ic_location"
+                          android:tint="@color/colorAccent"
+                          tools:ignore="ContentDescription" />
+
+
+                        <LinearLayout
+                          android:layout_gravity="center_vertical"
+                          android:layout_height="wrap_content"
+                          android:layout_width="match_parent"
+                          android:orientation="vertical">
+
+
+                            <LinearLayout
+                              android:layout_height="?attr/actionBarSize"
+                              android:layout_marginStart="10dp"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical">
+
+
+                                <TextView
+                                  android:id="@+id/address1"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="wrap_content"
+                                  android:text="ABC Street Sector 1/2"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                                <TextView
+                                  android:id="@+id/country1"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="wrap_content"
+                                  android:text="XYZ Country"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                              android:layout_height="?attr/actionBarSize"
+                              android:layout_marginLeft="10dp"
+                              android:layout_marginStart="10dp"
+                              android:layout_width="match_parent"
+                              android:orientation="vertical">
+
+
+                                <TextView
+                                  android:id="@+id/addres2"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="wrap_content"
+                                  android:text="ABC Street Sector 1/2"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+                                <TextView
+                                  android:id="@+id/country2"
+                                  android:layout_height="wrap_content"
+                                  android:layout_width="wrap_content"
+                                  android:text="XYZ Country"
+                                  android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <View
+                      android:id="@+id/extraSpace"
+                      android:layout_height="wrap_content"
+                      android:layout_width="match_parent" />
+
+                </LinearLayout>
+
+
+            </androidx.core.widget.NestedScrollView>
+
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
